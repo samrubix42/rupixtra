@@ -112,7 +112,6 @@ new class extends Component
             </div>
         </div>
     </header>
-    <!-- Offcanvas More info-->
     <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-body custom-nevbar">
             <div class="row">
