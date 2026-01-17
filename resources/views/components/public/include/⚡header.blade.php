@@ -9,56 +9,71 @@ new class extends Component
 ?>
 
 <div>
-     <header class="header-section header-version3">
+    <header class="header-section header-version3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                          <style>
+                            .logo {
+                                height: 60px;
+                                /* Desktop default */
+                                transition: height 0.3s ease;
+                            }
+
+                            @media (max-width: 768px) {
+                                .logo {
+                                    height: 40px !important;
+                                    /* Tablet & Mobile */
+                                }
+                            }
+
+                            @media (max-width: 480px) {
+                                .logo {
+                                    height: 32px !important;
+                                    /* Small phones */
+                                }
+                            }
+                        </style>
                     <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo-dark.png')}}" class="logo" style="height: 60px" alt="logo"></a>
+                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{asset('images/logo-dark.png')}}" class="logo" style="height: 60px" alt="logo"></a>
                         <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="bi bi-list"></i>
                         </a>
+                  
 
                         <div class="collapse navbar-collapse ms-auto " id="navbar-content">
                             <div class="main-menu d-flex align-items-center">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                            <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                            <li><a class="dropdown-item" href="index-3.html">Home Three</a></li>
-                                            <li><a class="dropdown-item" href="index-4.html">Home Four</a></li>
-                                            <li><a class="dropdown-item" href="index-5.html">Home Five</a></li>
-                                        </ul>
-                                    </li> 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Loans</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="loan-reviews.html">Personal loan</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details.html">Home Loan</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Bussiness Loan</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Lap</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Self-Employed Pro Loan</a></li>
-                                        </ul>
-                                    </li> 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="loan-comparison.html">Calulator</a>
+                                        <a class="nav-link" href="{{ route('home') }}"> Home </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="{{ route('loan.reviews') }}" data-bs-toggle="dropdown" aria-expanded="false">Loans</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="{{ route('loan.details') }}">Personal loan</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('loan.details') }}">Home Loan</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('loan.details') }}">Bussiness Loan</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('loan.details') }}">Lap</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('loan.details') }}">Self-Employed Pro Loan</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('calculator') }}">Calulator</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Offerings </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="about.html">Credit Cards</a></li>
-                                            <li><a class="dropdown-item" href="about.html">Mutual Funds</a></li>
-                                            <li><a class="dropdown-item" href="about.html">Life Insurance</a></li>
-                        
+                                            <li><a class="dropdown-item" href="{{ route('credit.cards') }}">Credit Cards</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('mutual.funds') }}">Mutual Funds</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('life.insurance') }}">Life Insurance</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Blog</a>
+                                        <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Reach Us</a>
+                                        <a class="nav-link" href="{{ route('contact') }}">Reach Us</a>
                                     </li>
                                 </ul>
                                 <div class="nav-right d-none d-xl-block">
@@ -67,7 +82,7 @@ new class extends Component
                                             <input type="text" placeholder="Search" required="">
                                             <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
                                         </form>
-                                        <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white d-xxl-none"> <i class="bi bi-search"></i> <span></span> </a>    
+                                        <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white d-xxl-none"> <i class="bi bi-search"></i> <span></span> </a>
                                         <div class="language-box d-flex align-items-center justify-content-center position-relative">
                                             <select name="language">
                                                 <option value="1">En</option>
@@ -105,42 +120,35 @@ new class extends Component
                     <div class="custom-nevbar__left">
                         <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
                         <ul class="custom-nevbar__nav mb-lg-0">
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                    <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                    <li><a class="dropdown-item" href="index-3.html">Home Three</a></li>
-                                    <li><a class="dropdown-item" href="index-4.html">Home Four</a></li>
-                                    <li><a class="dropdown-item" href="index-5.html">Home Five</a></li>
-                                </ul>
+                            <li class="menu_item">
+                                <a class="menu_link" href="{{ route('home') }}">Home</a>
                             </li>
                             <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
+                                <a class="menu_link dropdown-toggle" href="{{ route('loan.reviews') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loans </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('loan.details') }}">Personal Loan</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('loan.details') }}">Home Loan</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('loan.details') }}">Business Loan</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('loan.details') }}">LAP</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('loan.details') }}">Self-Employed Pro Loan</a></li>
                                 </ul>
                             </li>
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Loan Comparison</a>
+                                <a class="menu_link" href="{{ route('calculator') }}">calculator</a>
                             </li>
                             <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Offerings </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about.html">about us</a></li>
-                                    <li><a class="dropdown-item" href="service.html">service</a></li>
-                                    <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-details.html">blog Details</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="sign-up.html">sign up</a></li>
-                                    <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('credit.cards') }}">Credit Cards</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('mutual.funds') }}">Mutual Funds</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('life.insurance') }}">Life Insurance</a></li>
                                 </ul>
                             </li>
                             <li class="menu_item">
-                                <a class="menu_link" href="contact.html">contact us</a>
+                                <a class="menu_link" href="{{ route('blog') }}">Blog</a>
+                            </li>
+                            <li class="menu_item">
+                                <a class="menu_link" href="{{ route('contact') }}">Reach Us</a>
                             </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="sign-in.html">sign in</a>
