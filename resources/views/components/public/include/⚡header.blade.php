@@ -14,7 +14,7 @@ new class extends Component
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo-dark.png')}}" class="logo" style="height: 60px" alt="logo"></a>
                         <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="bi bi-list"></i>
                         </a>
@@ -33,31 +33,32 @@ new class extends Component
                                         </ul>
                                     </li> 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Loans</a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
+                                            <li><a class="dropdown-item" href="loan-reviews.html">Personal loan</a></li>
+                                            <li><a class="dropdown-item" href="loan-reviews-details.html">Home Loan</a></li>
+                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Bussiness Loan</a></li>
+                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Lap</a></li>
+                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Self-Employed Pro Loan</a></li>
                                         </ul>
                                     </li> 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="loan-comparison.html">Loan Comparison</a>
+                                        <a class="nav-link" href="loan-comparison.html">Calulator</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Offerings </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="about.html">about Us</a></li>
-                                            <li><a class="dropdown-item" href="service.html">service</a></li>
-                                            <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                                            <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                            <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
-                                            <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
+                                            <li><a class="dropdown-item" href="about.html">Credit Cards</a></li>
+                                            <li><a class="dropdown-item" href="about.html">Mutual Funds</a></li>
+                                            <li><a class="dropdown-item" href="about.html">Life Insurance</a></li>
+                        
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact us</a>
+                                        <a class="nav-link" href="contact.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Reach Us</a>
                                     </li>
                                 </ul>
                                 <div class="nav-right d-none d-xl-block">
@@ -96,4 +97,82 @@ new class extends Component
             </div>
         </div>
     </header>
+    <!-- Offcanvas More info-->
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-body custom-nevbar">
+            <div class="row">
+                <div class="col-md-7 col-xl-8">
+                    <div class="custom-nevbar__left">
+                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
+                        <ul class="custom-nevbar__nav mb-lg-0">
+                            <li class="menu_item dropdown">
+                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index.html">Home One</a></li>
+                                    <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
+                                    <li><a class="dropdown-item" href="index-3.html">Home Three</a></li>
+                                    <li><a class="dropdown-item" href="index-4.html">Home Four</a></li>
+                                    <li><a class="dropdown-item" href="index-5.html">Home Five</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_item dropdown">
+                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
+                                    <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
+                                    <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_item">
+                                <a class="menu_link" href="loan-comparison.html">Loan Comparison</a>
+                            </li>
+                            <li class="menu_item dropdown">
+                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about.html">about us</a></li>
+                                    <li><a class="dropdown-item" href="service.html">service</a></li>
+                                    <li><a class="dropdown-item" href="service-details.html">service details</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">blog</a></li>
+                                    <li><a class="dropdown-item" href="blog-details.html">blog Details</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="sign-up.html">sign up</a></li>
+                                    <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_item">
+                                <a class="menu_link" href="contact.html">contact us</a>
+                            </li>
+                            <li class="menu_item">
+                                <a class="menu_link" href="sign-in.html">sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xl-4">
+                    <div class="custom-nevbar__right">
+                        <div class="custom-nevbar__top d-none d-md-block">
+                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
+                            <div class="custom-nevbar__right-thumb mb-auto">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </div>
+                        </div>
+                        <ul class="custom-nevbar__right-location">
+                            <li>
+                                <p class="mb-2">Phone: </p>
+                                <a href="tel:+123456789" class="fs-4 contact">+123 456 789</a>
+                            </li>
+                            <li class="location">
+                                <p class="mb-2">Email: </p>
+                                <a href="/cdn-cgi/l/email-protection#8cc5e2eae3ccebe1ede5e0a2efe3e1" class="fs-4 contact"><span class="__cf_email__" data-cfemail="440d2a222b042329252d286a272b29">[email&#160;protected]</span></a>
+                            </li>
+                            <li class="location">
+                                <p class="mb-2">Location: </p>
+                                <p class="fs-4 contact">6391 Celina, Delaware 10299</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

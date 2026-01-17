@@ -79,6 +79,8 @@
     <!-- jquery validate -->
     <script src="{{ asset('assets/vendor/jquery-validate/jquery.validate.min.js') }}"></script>
 
+    <!-- alpine js -->
+
     <!--  / js dependencies end  -->
 
     <!-- plugins js -->

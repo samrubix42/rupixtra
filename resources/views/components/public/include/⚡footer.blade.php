@@ -16,7 +16,7 @@ new class extends Component
                     <div class="about-company wow fadeInLeft" data-wow-duration="0.8s">
                         <div class="footer__logo mb-4">
                             <a href="index.html">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="{{asset('images/logo-dark.png')}}" style="height:60px;" alt="Logo">
                             </a>
                         </div>
                         <p>Welcome to Finview, your trusted resource for financial loan reviews and comparisons. Our dedicated team of experts analyzes</p>

@@ -1,87 +1,5 @@
 
 <div>
-   
-    <!-- Offcanvas More info-->
-    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
-        <div class="offcanvas-body custom-nevbar">
-            <div class="row">
-                <div class="col-md-7 col-xl-8">
-                    <div class="custom-nevbar__left">
-                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                        <ul class="custom-nevbar__nav mb-lg-0">
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                    <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                    <li><a class="dropdown-item" href="index-3.html">Home Three</a></li>
-                                    <li><a class="dropdown-item" href="index-4.html">Home Four</a></li>
-                                    <li><a class="dropdown-item" href="index-5.html">Home Five</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Loan Comparison</a>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about.html">about us</a></li>
-                                    <li><a class="dropdown-item" href="service.html">service</a></li>
-                                    <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-details.html">blog Details</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="sign-up.html">sign up</a></li>
-                                    <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="contact.html">contact us</a>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="sign-in.html">sign in</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-5 col-xl-4">
-                    <div class="custom-nevbar__right">
-                        <div class="custom-nevbar__top d-none d-md-block">
-                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                            <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
-                            </div>
-                        </div>
-                        <ul class="custom-nevbar__right-location">
-                            <li>
-                                <p class="mb-2">Phone: </p>
-                                <a href="tel:+123456789" class="fs-4 contact">+123 456 789</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Email: </p>
-                                <a href="/cdn-cgi/l/email-protection#41082f272e01262c20282d6f222e2c" class="fs-4 contact"><span class="__cf_email__" data-cfemail="165f78707956717b777f7a3875797b">[email&#160;protected]</span></a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Location: </p>
-                                <p class="fs-4 contact">6391 Celina, Delaware 10299</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- header-section end -->
-
-    <!-- Hero Section Start -->
     <section class="hero hero-version4">
         <div class="container">
             <div class="row align-items-xxl-start align-items-center justify-content-between">
@@ -169,7 +87,7 @@
             <div class="ammount-comparison4-head">
                 <div class="amount-item-form">
                     <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Loan amount</span>
-                    <input type="text" placeholder="$500,000">
+                    <input type="text" placeholder="₹500,000">
                 </div>
                 <div class="amount-item-form">
                     <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Minimum deposit</span>
@@ -195,10 +113,10 @@
                     <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Sort by</span>
                     <select name="deposit">
                         <option value="1">Interest Rate - Low to High</option>
-                        <option value="1">$258</option>
-                        <option value="1">$3558</option>
-                        <option value="1">$840</option>
-                        <option value="1">$9584</option>
+                        <option value="1">₹258</option>
+                        <option value="1">₹3558</option>
+                        <option value="1">₹840</option>
+                        <option value="1">₹9584</option>
                     </select>
                 </div>
                 <div class="amount-item-filter">
@@ -231,7 +149,7 @@
                                 <img src="assets/images/review-line.png" alt="elemet" class="review-line">
                                 <div class="price-content">
                                     <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>$745</h3> <span>/ month</span>
+                                        <span>From</span> <h3>₹745</h3> <span>/ month</span>
                                     </div>
                                     <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
                                 </div>
@@ -269,7 +187,7 @@
                                 <div class="view-content-wrap text-start">
                                     <div class="box">
                                         <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to $100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
+                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
                                         </p>
                                         <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
                                         <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
@@ -284,13 +202,13 @@
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
                                                     <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or $15</span>
+                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
                                                 </div>
                                             </div>
                                             <div class="personal-loan-box">
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">$15</span>
+                                                    <span class="pay-name fw-500">₹15</span>
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Check processing fee</span>
@@ -341,7 +259,7 @@
                                 <img src="assets/images/review-line.png" alt="elemet" class="review-line">
                                 <div class="price-content">
                                     <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>$314</h3> <span>/ month</span>
+                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
                                     </div>
                                     <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
                                 </div>
@@ -379,7 +297,7 @@
                                 <div class="view-content-wrap text-start">
                                     <div class="box">
                                         <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to $100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
+                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
                                         </p>
                                         <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
                                         <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
@@ -394,13 +312,13 @@
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
                                                     <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or $15</span>
+                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
                                                 </div>
                                             </div>
                                             <div class="personal-loan-box">
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">$15</span>
+                                                    <span class="pay-name fw-500">₹15</span>
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Check processing fee</span>
@@ -451,7 +369,7 @@
                                 <img src="assets/images/review-line.png" alt="elemet" class="review-line">
                                 <div class="price-content">
                                     <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>$314</h3> <span>/ month</span>
+                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
                                     </div>
                                     <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
                                 </div>
@@ -489,7 +407,7 @@
                                 <div class="view-content-wrap text-start">
                                     <div class="box">
                                         <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to $100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
+                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
                                         </p>
                                         <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
                                         <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
@@ -504,13 +422,13 @@
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
                                                     <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or $15</span>
+                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
                                                 </div>
                                             </div>
                                             <div class="personal-loan-box">
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">$15</span>
+                                                    <span class="pay-name fw-500">₹15</span>
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Check processing fee</span>
@@ -561,7 +479,7 @@
                                 <img src="assets/images/review-line.png" alt="elemet" class="review-line">
                                 <div class="price-content">
                                     <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>$314</h3> <span>/ month</span>
+                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
                                     </div>
                                     <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
                                 </div>
@@ -599,7 +517,7 @@
                                 <div class="view-content-wrap text-start">
                                     <div class="box">
                                         <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to $100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
+                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
                                         </p>
                                         <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
                                         <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
@@ -614,13 +532,13 @@
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
                                                     <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or $15</span>
+                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
                                                 </div>
                                             </div>
                                             <div class="personal-loan-box">
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">$15</span>
+                                                    <span class="pay-name fw-500">₹15</span>
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Check processing fee</span>
@@ -671,7 +589,7 @@
                                 <img src="assets/images/review-line.png" alt="elemet" class="review-line">
                                 <div class="price-content">
                                     <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>$314</h3> <span>/ month</span>
+                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
                                     </div>
                                     <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
                                 </div>
@@ -709,7 +627,7 @@
                                 <div class="view-content-wrap text-start">
                                     <div class="box">
                                         <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to $100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
+                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
                                         </p>
                                         <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
                                         <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
@@ -724,13 +642,13 @@
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
                                                     <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or $15</span>
+                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
                                                 </div>
                                             </div>
                                             <div class="personal-loan-box">
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">$15</span>
+                                                    <span class="pay-name fw-500">₹15</span>
                                                 </div>
                                                 <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
                                                     <span class="position-relative pay-in">Check processing fee</span>
