@@ -39,106 +39,115 @@
                                         <form wire:submit.prevent="calculate" class="calculate__form">
 
                                             <div class="row gy-5">
-                                                <!-- Loan 01 -->
                                                 <div class="col-md-6">
-                                                    <h5 class="calculator__title">Loan 01</h5>
 
-                                                    <label>Loan Amount</label>
-                                                    <input type="number" wire:model.defer="amount" placeholder="e.g. 500000">
+                                                    <h5 class="calculator__title">Loan Calculator</h5>
+
+                                                    <label>Loan Amount (₹)</label>
+                                                    <input
+                                                        type="number"
+                                                        step="0.01"
+                                                        wire:model.defer="amount"
+                                                        placeholder="e.g. 500000">
                                                     @error('amount') <span class="error">{{ $message }}</span> @enderror
 
                                                     <label>Loan Term (Years)</label>
-                                                    <input type="number" wire:model.defer="year" placeholder="e.g. 20">
+                                                    <input
+                                                        type="number"
+                                                        step="0.1"
+                                                        wire:model.defer="year"
+                                                        placeholder="e.g. 20.5">
                                                     @error('year') <span class="error">{{ $message }}</span> @enderror
 
                                                     <label>Interest Rate (%)</label>
-                                                    <input type="number" wire:model.defer="interest" placeholder="e.g. 8.5">
+                                                    <input
+                                                        type="number"
+                                                        step="0.01"
+                                                        wire:model.defer="interest"
+                                                        placeholder="e.g. 8.75">
                                                     @error('interest') <span class="error">{{ $message }}</span> @enderror
 
-                                                    @if($emi1)
-                                                    <div class="result">
-                                                        <p><strong>EMI:</strong> ₹{{ number_format($emi1, 2) }}</p>
-                                                        <p><strong>Total Interest:</strong> ₹{{ number_format($totalInterest1, 2) }}</p>
-                                                        <p><strong>Total Payment:</strong> ₹{{ number_format($totalPayment1, 2) }}</p>
+                                                    @if($emi)
+                                                    <div class="result mt-4">
+                                                        <p><strong>EMI:</strong> ₹{{ number_format($emi, 2) }}</p>
+                                                        <p><strong>Total Interest:</strong> ₹{{ number_format($totalInterest, 2) }}</p>
+                                                        <p><strong>Total Payment:</strong> ₹{{ number_format($totalPayment, 2) }}</p>
                                                     </div>
                                                     @endif
-                                                </div>
 
-                                                <!-- Loan 02 -->
-                                                <div class="col-md-6">
-                                                    <h5 class="calculator__title">Loan 02</h5>
-
-                                                    <label>Loan Amount</label>
-                                                    <input type="number" wire:model.defer="amount2" placeholder="e.g. 500000">
-                                                    @error('amount2') <span class="error">{{ $message }}</span> @enderror
-
-                                                    <label>Loan Term (Years)</label>
-                                                    <input type="number" wire:model.defer="year2" placeholder="e.g. 20">
-                                                    @error('year2') <span class="error">{{ $message }}</span> @enderror
-
-                                                    <label>Interest Rate (%)</label>
-                                                    <input type="number" wire:model.defer="interest2" placeholder="e.g. 8.5">
-                                                    @error('interest2') <span class="error">{{ $message }}</span> @enderror
-
-                                                    @if($emi2)
-                                                    <div class="result">
-                                                        <p><strong>EMI:</strong> ₹{{ number_format($emi2, 2) }}</p>
-                                                        <p><strong>Total Interest:</strong> ₹{{ number_format($totalInterest2, 2) }}</p>
-                                                        <p><strong>Total Payment:</strong> ₹{{ number_format($totalPayment2, 2) }}</p>
-                                                    </div>
-                                                    @endif
                                                 </div>
                                             </div>
 
                                             <button class="btn_theme mt_40">Calculate Loan</button>
-
                                         </form>
                                     </div>
+
 
                                 </div>
                             </div>
                         </div>
                         <div class="card card--custom calculator-result">
+
                             <h3>Result</h3>
+
                             <div class="card--custom__loan">
                                 <div class="card--custom__form">
                                     <div class="calculate__form">
-                                        <div class="row gy-5 gy-md-0">
-                                            <div class="col-12 col-md-6">
-                                                <h5 class="calculator__title">Loan 01</h5>
+
+                                        @if($emi)
+                                        <div class="row gy-5">
+
+                                            <div class="col-12">
+                                                <h5 class="calculator__title">Loan Summary</h5>
+
                                                 <div class="calculate__form-part">
+
                                                     <div class="input-single">
-                                                        <label class="label">Monthly cost </label>
-                                                        <p class="headingFour" id="monthly_cost"></p>
+                                                        <label class="label">Monthly EMI</label>
+                                                        <p class="headingFour">
+                                                            ₹{{ number_format($emi, 2) }}
+                                                        </p>
                                                     </div>
+
                                                     <div class="input-single">
-                                                        <label class="label">Total cost</label>
-                                                        <p class="headingFour" id="total_value"></p>
+                                                        <label class="label">Total Interest</label>
+                                                        <p class="headingFour">
+                                                            ₹{{ number_format($totalInterest, 2) }}
+                                                        </p>
                                                     </div>
+
+                                                    <div class="input-single">
+                                                        <label class="label">Total Payment</label>
+                                                        <p class="headingFour">
+                                                            ₹{{ number_format($totalPayment, 2) }}
+                                                        </p>
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
-                                                <h5 class="calculator__title">Loan 02</h5>
-                                                <div class="calculate__form-part">
-                                                    <div class="input-single">
-                                                        <label class="label">Monthly cost </label>
-                                                        <p class="headingFour" id="monthly_cost2"></p>
-                                                    </div>
-                                                    <div class="input-single">
-                                                        <label class="label">Total cost</label>
-                                                        <p class="headingFour" id="total_value2"></p>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                             <div class="col-12 mt_32">
-                                                <p class="note"><span class="">MORE:</span> Learn about the pros and cons of a shorter-term mortgage or how to get preapproved for a mortgage.</p>
-                                                <a href="{{ route('home') }}" class="btn_theme btn_theme_active mt_40">Back <i class="bi bi-arrow-up-right"></i><span></span></a>
+                                                <p class="note">
+                                                    <span>MORE:</span>
+                                                    A lower interest rate or shorter loan term can significantly reduce your total interest paid.
+                                                </p>
+
+                                                <a href="{{ route('home') }}"
+                                                    class="btn_theme btn_theme_active mt_40">
+                                                    Back <i class="bi bi-arrow-up-right"></i>
+                                                    <span></span>
+                                                </a>
                                             </div>
+
                                         </div>
+                                        @endif
+
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">

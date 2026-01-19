@@ -13,40 +13,45 @@ new class extends Component
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                          <style>
+                    <style>
+                        .logo {
+                            height: 60px;
+                            /* Desktop default */
+                            transition: height 0.3s ease;
+                        }
+
+                        @media (max-width: 768px) {
                             .logo {
-                                height: 60px;
-                                /* Desktop default */
-                                transition: height 0.3s ease;
+                                height: 40px !important;
+                                /* Tablet & Mobile */
                             }
+                        }
 
-                            @media (max-width: 768px) {
-                                .logo {
-                                    height: 40px !important;
-                                    /* Tablet & Mobile */
-                                }
+                        @media (max-width: 480px) {
+                            .logo {
+                                height: 32px !important;
+                                /* Small phones */
                             }
-
-                            @media (max-width: 480px) {
-                                .logo {
-                                    height: 32px !important;
-                                    /* Small phones */
-                                }
-                            }
-                        </style>
+                        }
+                    </style>
                     <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{asset('images/logo-dark.png')}}" class="logo" style="height: 60px" alt="logo"></a>
+                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{asset('images/logo-dark.png')}}" class="logo" alt="logo"></a>
                         <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="bi bi-list"></i>
                         </a>
-                  
+
 
                         <div class="collapse navbar-collapse ms-auto " id="navbar-content">
-                            <div class="main-menu d-flex align-items-center">
+                            <div class="main-menu d-flex align-items-center justify-content-between w-100">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('home') }}"> Home </a>
                                     </li>
+                                    <li class="nav-item dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('about') }}">Our Story</a>
+                                    </li>
+
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="{{ route('loan.reviews') }}" data-bs-toggle="dropdown" aria-expanded="false">Loans</a>
                                         <ul class="dropdown-menu">
@@ -78,32 +83,9 @@ new class extends Component
                                 </ul>
                                 <div class="nav-right d-none d-xl-block">
                                     <div class="nav-right__search">
-                                        <form action="#" class="header-fiffrent-form d-xxl-flex d-none">
-                                            <input type="text" placeholder="Search" required="">
-                                            <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
-                                        </form>
-                                        <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white d-xxl-none"> <i class="bi bi-search"></i> <span></span> </a>
-                                        <div class="language-box d-flex align-items-center justify-content-center position-relative">
-                                            <select name="language">
-                                                <option value="1">En</option>
-                                                <option value="2">Es</option>
-                                                <option value="3">Hy</option>
-                                                <option value="3">De</option>
-                                            </select>
-                                            <i class="bi bi-globe icon"></i>
-                                        </div>
-                                        <a href="sign-in.html" class="btn_theme btn_theme_active">Sign In <i class="bi bi-arrow-up-right"></i><span></span></a>
+                                        <a href="{{ route('contact') }}" class="btn_theme btn_theme_active">Quick Enquiry <i class="bi bi-arrow-up-right"></i><span></span></a>
                                     </div>
-                                    <div class="nav-right__search-inner">
-                                        <div class="nav-search-inner__form">
-                                            <form method="POST" id="search" class="inner__form">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search" required="">
-                                                    <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -119,6 +101,9 @@ new class extends Component
                     <div class="custom-nevbar__left">
                         <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
                         <ul class="custom-nevbar__nav mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('about') }}"> Our story </a>
+                            </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="{{ route('home') }}">Home</a>
                             </li>
@@ -149,9 +134,7 @@ new class extends Component
                             <li class="menu_item">
                                 <a class="menu_link" href="{{ route('contact') }}">Reach Us</a>
                             </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="sign-in.html">sign in</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
