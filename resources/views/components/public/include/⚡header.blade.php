@@ -15,7 +15,7 @@ new class extends Component
                 <div class="col-12">
                     <style>
                         .logo {
-                            height: 60px;
+                            height: 55px;
                             /* Desktop default */
                             transition: height 0.3s ease;
                         }
@@ -35,7 +35,7 @@ new class extends Component
                         }
                     </style>
                     <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{asset('images/logo-dark.png')}}" class="logo" alt="logo"></a>
+                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{asset('images/logo-light.png')}}" class="logo" alt="logo"></a>
                         <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="bi bi-list"></i>
                         </a>

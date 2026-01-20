@@ -3,34 +3,72 @@
 use Livewire\Component;
 
 new class extends Component
-{
+{ public $type = 'personal';
+
     public $amount;
-    public $year;
     public $interest;
+    public $tenure;
 
-    public $emi;
-    public $totalInterest;
-    public $totalPayment;
-
-    protected $rules = [
-        'amount'   => 'required|numeric|min:1',
-        'year'     => 'required|numeric|min:0.1',
-        'interest' => 'required|numeric|min:0.1',
-    ];
-
-    public function calculate()
+    public function mount()
     {
-        $this->validate();
-
-        $monthlyRate = $this->interest / 12 / 100;
-        $months = $this->year * 12;
-
-        $emi = ($this->amount * $monthlyRate * pow(1 + $monthlyRate, $months)) /
-               (pow(1 + $monthlyRate, $months) - 1);
-
-        $this->emi = round($emi, 2);
-        $this->totalPayment = round($emi * $months, 2);
-        $this->totalInterest = round($this->totalPayment - $this->amount, 2);
+        $this->setDefaults();
     }
+
+    public function setType($type)
+    {
+        $this->type = $type;
+        $this->setDefaults();
+    }
+
+    private function setDefaults()
+    {
+        if ($this->type === 'personal') {
+            $this->amount = 50000;
+            $this->interest = 9.99;
+            $this->tenure = 12; // months
+        }
+
+        if ($this->type === 'home') {
+            $this->amount = 300000;
+            $this->interest = 7.75;
+            $this->tenure = 1; // years
+        }
+
+        if ($this->type === 'car') {
+            $this->amount = 100000;
+            $this->interest = 7;
+            $this->tenure = 1; // years
+        }
+    }
+
+    public function getMonthsProperty()
+    {
+        return $this->type === 'personal'
+            ? $this->tenure
+            : $this->tenure * 12;
+    }
+
+    public function getEmiProperty()
+    {
+        $p = $this->amount;
+        $r = $this->interest / 12 / 100;
+        $n = $this->months;
+
+        if ($r == 0) return round($p / $n);
+
+        return round(($p * $r * pow(1 + $r, $n)) / (pow(1 + $r, $n) - 1));
+    }
+
+    public function getTotalPayableProperty()
+    {
+        return $this->emi * $this->months;
+    }
+
+    public function getInterestAmountProperty()
+    {
+        return $this->totalPayable - $this->amount;
+    }
+
+
 
 };
