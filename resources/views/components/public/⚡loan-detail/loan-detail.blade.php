@@ -158,7 +158,7 @@
                                         </div>
                                         <div class="col-md-4 text-md-end mt-3 mt-md-0">
                                             <a href="{{ route('loan.details') }}" class="btn btn-primary px-4 py-2 mb-2 w-100 w-md-auto" style="background: #11274D; border: none;">
-                                                Visit Site <i class="bi bi-arrow-up-right ms-1"></i>
+                                           Enquire now <i class="bi bi-arrow-up-right ms-1"></i>
                                             </a>
                                             @if($index === 0)
                                             <span class="badge bg-success d-block d-md-inline-block mt-2">Best Interest Rate</span>
@@ -243,13 +243,61 @@
                                 transform: translateY(-2px);
                                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
                             }
+
+                            /* Sidebar Responsive Styles */
+                            @media (max-width: 1199.98px) {
+                                .btn_sticky {
+                                    position: static !important;
+                                    display: block !important;
+                                    visibility: visible !important;
+                                    opacity: 1 !important;
+                                    height: auto !important;
+                                    overflow: visible !important;
+                                }
+
+                                .sidebar {
+                                    position: static !important;
+                                    top: auto !important;
+                                    right: auto !important;
+                                    left: auto !important;
+                                    bottom: auto !important;
+                                    width: 100% !important;
+                                    max-width: 100% !important;
+                                    margin-top: 30px !important;
+                                    transform: none !important;
+                                    display: block !important;
+                                    visibility: visible !important;
+                                    opacity: 1 !important;
+                                    z-index: auto !important;
+                                    height: auto !important;
+                                    overflow: visible !important;
+                                }
+
+                                .sidebar_fixed,
+                                .sidebar-xl-fixed {
+                                    position: static !important;
+                                    transform: none !important;
+                                }
+
+                                .col-12.col-xl-4.btn_sticky {
+                                    order: 2 !important;
+                                    display: block !important;
+                                }
+
+                                .col-12.col-xl-8 {
+                                    order: 1 !important;
+                                }
+
+                                .sidebar__part {
+                                    display: block !important;
+                                    visibility: visible !important;
+                                    opacity: 1 !important;
+                                }
+                            }
                         </style>
                     </div>
                 </div>
                 <div class="col-12 col-xl-4 btn_sticky">
-                    <div class="d-inline-block d-xl-none mb-4">
-                        <button class="sidebar_btn"> <i class="bi bi-layout-text-sidebar"></i> <span>Loan Info</span></button>
-                    </div>
                     <div class="sidebar sidebar_fixed sidebar-xl-fixed cus_scrollbar">
                         <div class="sidebar__part">
                             <h4 class="sidebar__part-title">Apply for a Loan</h4>
@@ -336,16 +384,7 @@
                             </form>
                         </div>
 
-                        <div class="sidebar__part">
-                            <h4 class="sidebar__part-title">Share with</h4>
-                            <div class="social mt_32">
-                                <a href="#" class="btn_theme social_box btn_bg_white"><i class="bi bi-facebook"></i><span></span></a>
-                                <a href="#" class="btn_theme social_box btn_bg_white"><i class="bi bi-twitter"></i><span></span></a>
-                                <a href="#" class="btn_theme social_box btn_bg_white"><i class="bi bi-pinterest"></i><span></span></a>
-                                <a href="#" class="btn_theme social_box btn_bg_white"><i class="bi bi-twitch"></i><span></span></a>
-                                <a href="#" class="btn_theme social_box btn_bg_white"><i class="bi bi-skype"></i><span></span></a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
