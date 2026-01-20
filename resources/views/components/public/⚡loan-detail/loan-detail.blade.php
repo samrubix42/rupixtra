@@ -1,4 +1,3 @@
-
 <div>
     <!-- Banner Start -->
     <section class="banner">
@@ -6,7 +5,7 @@
             <div class="row gy-4 gy-sm-0 align-items-center">
                 <div class="col-12 col-sm-6">
                     <div class="banner__content">
-                        <h1 class="banner__title display-4 wow fadeInLeft" data-wow-duration="0.8s">Loan Reviews - details</h1> 
+                        <h1 class="banner__title display-4 wow fadeInLeft" data-wow-duration="0.8s">Loan Reviews - details</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb wow fadeInRight" data-wow-duration="0.8s">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -33,119 +32,310 @@
                 <div class="col-12 col-xl-8 order-1 order-xl-0">
                     <div class="reviews-details__area">
                         <div class="reviews-details__part wow fadeInUp" data-wow-duration="0.8s">
-                            <div class="loan-reviews loan-reviews--quaternary wow fadeInUp" data-wow-duration="0.8s">
-                                <div class="loan-reviews_card card">
-                                    <div class="loan-reviews__part-one">
-                                        <div class="loan-reviews__thumb">
-                                            <img src="assets/images/loan_reviews_logo2.png" alt="image">
-                                        </div>
-                                     
-                                    </div>
-                                    <div class="loan-reviews__part-two">
-                                        <div class="reviews-heading">
-                                            <h4 class="reviews-heading__title">Student Loans</h4>
-                                            <p class="reviews-heading__content">Canada Largest online mortgage lender</p>
-                                        </div>
-                                        <div class="reviews-inner">
-                                            <ul>
-                                                <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
-                                                <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
-                                                <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
-                                                <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+
+                            <!-- INTRO CONTENT -->
+                            <div class="section__content wow fadeInUp" data-wow-duration="0.8s">
+                                <h2 class="section__content-title">
+                                    Turn Your Dream Home into Reality with Rupixtra Home Loans
+                                </h2>
+
+                                <p class="section__content-text">
+                                    Buy, build, or upgrade your home with Rupixtra’s easy and affordable home loan solutions.
+                                    We help you access the best home loan offers from leading banks and NBFCs with competitive
+                                    interest rates and expert guidance at every step.
+                                </p>
+
+                                <p class="section__content-text">
+                                    A home loan is a secured loan offered to purchase, construct, renovate, or transfer an
+                                    existing home loan. Since the property acts as collateral, home loans come with lower
+                                    interest rates and longer repayment tenures, making them ideal for long-term financial
+                                    planning.
+                                </p>
+                            </div>
+
+                            <!-- HOME LOAN FEATURES -->
+                            <div class="repayment section__content wow fadeInUp" data-wow-duration="0.8s">
+                                <h3 class="section__content-title">Home Loan Features</h3>
+
+                                <div class="section__content-inner-list">
+                                    <ul class="bullet">
+                                        <li><strong>Loan Amount:</strong> Up to ₹5 Crores*</li>
+                                        <li><strong>Interest Rates:</strong> Starting from attractive market rates*</li>
+                                        <li><strong>Tenure:</strong> Up to 30 years</li>
+                                        <li><strong>Margin:</strong> As per lender guidelines</li>
+                                        <li><strong>Prepayment:</strong> Allowed as per RBI norms</li>
+                                    </ul>
+
+                                    <p class="mt-3">
+                                        <small>*Terms and conditions vary based on lender policies and applicant profile.</small>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="section__content wow fadeInUp" data-wow-duration="0.8s">
-                                <h2 class="section__content-title">The Benefits of Consolidating Your Student Loans</h2>
-                                <p class="section__content-text">At FINVIEW, we provide comprehensive and unbiased loan reviews to help you navigate the complex world of financial lending. Our team of experts meticulously researches and analyzes various loan options to provide you with reliable and up-to-date information.</p>
-                                <p class="section__content-text">When it comes to Loan, we've conducted a thorough review to provide you with all the essential details. We delve into the details of each loan, examining interest rates, repayment terms, eligibility criteria, and any associated fees.</p>
-                            </div>
-                  
 
+                            <!-- HOW TO APPLY -->
                             <div class="repayment section__content wow fadeInUp" data-wow-duration="0.8s">
-                                <h3 class="section__content-title">Repayment Terms</h3>
+                                <h3 class="section__content-title">
+                                    How to Apply for a Home Loan with Rupixtra
+                                </h3>
+
                                 <div class="section__content-inner-list">
                                     <ol class="number">
-                                        <li>Loan Duration:
+                                        <li>
+                                            Check Eligibility
                                             <ol class="bullet">
-                                                <li>Specify the length of time borrowers have to repay the loan. For example, it could be expressed in months or years.</li>
+                                                <li>Share basic personal, employment, and income details.</li>
                                             </ol>
                                         </li>
-                                        <li> Payment Frequency:
+
+                                        <li>
+                                            Compare Lenders
                                             <ol class="bullet">
-                                                <li>Indicate how often borrowers are required to make payments. Common options include monthly, bi-monthly, bi-weekly, or weekly payments.</li>
+                                                <li>Choose the best interest rate, EMI, and tenure from top banks and NBFCs.</li>
                                             </ol>
                                         </li>
-                                        <li> Amortization Type:
+
+                                        <li>
+                                            Document Submission
                                             <ol class="bullet">
-                                                <li>Describe whether the loan follows an amortizing or interest-only repayment structure. In an amortizing loan, each payment includes both principal and interest, while an interest-only loan requires only interest payments during a specific period.</li>
+                                                <li>Submit required documents through a simple and guided process.</li>
                                             </ol>
                                         </li>
-                                        <li>Payment Calculation:
+
+                                        <li>
+                                            Loan Approval
                                             <ol class="bullet">
-                                                <li>IExplain how the loan payment is calculated. This may include factors such as the loan amount, interest rate, and loan duration</li>
+                                                <li>Credit assessment and property verification by the lender.</li>
                                             </ol>
                                         </li>
-                                        <li> Prepayment Penalties:
+
+                                        <li>
+                                            Disbursal
                                             <ol class="bullet">
-                                                <li>If applicable, mention any penalties or fees associated with making early or additional payments towards the loan balance.</li>
-                                            </ol>
-                                        </li>
-                                        <li> Grace Period:
-                                            <ol class="bullet">
-                                                <li>If there is a grace period before the borrower needs to start making repayments, specify the duration and any conditions that apply.</li>
-                                            </ol>
-                                        </li>
-                                        
-                                        <li> Late Payment Policy:
-                                            <ol class="bullet">
-                                                <li>Outline the consequences and potential fees for late payments, including any grace periods and the impact on credit score.</li>
-                                            </ol>
-                                        </li>
-                                        <li> Payment Options:
-                                            <ol class="bullet">
-                                                <li>Provide information on the available payment methods, such as automatic bank transfers, online payments, or physical check payments.</li>
+                                                <li>Loan amount is released as per construction or property purchase stage.</li>
                                             </ol>
                                         </li>
                                     </ol>
                                 </div>
                             </div>
-                    
-                            <p class="wow fadeInUp" data-wow-duration="0.8s">It's important to customize the repayment terms section for each loan you review, ensuring that you accurately represent the specific details of that loan. Additionally, consider using clear and concise language to help borrowers easily understand the repayment conditions associated with the loan.</p>
+
+                            <!-- FOOT NOTE -->
+                            <p class="wow fadeInUp" data-wow-duration="0.8s">
+                                With Rupixtra, the home loan process is transparent, fast, and hassle-free.
+                                Our experts guide you at every step — from eligibility check to final disbursal —
+                                ensuring you make the right financial decision for your dream home.
+                            </p>
+
                         </div>
-    
-                
+
+                        <!-- Expandable Loan Comparison Cards -->
+                        <div class="reviews-details__part mt-5">
+                            <h3 class="mb-4 wow fadeInUp" data-wow-duration="0.8s">Compare Top Lenders</h3>
+                            
+                            @php
+                                $lenders = [
+                                    ['name' => 'Sarah Finance', 'image' => 'sarah.png', 'price' => 745, 'cosigner' => 'No'],
+                                    ['name' => 'Varun Bank', 'image' => 'varun.png', 'price' => 314, 'cosigner' => 'Yes'],
+                                    ['name' => 'Joseph Loans', 'image' => 'joseph.png', 'price' => 520, 'cosigner' => 'No'],
+                                    ['name' => 'Power Finance', 'image' => 'power.png', 'price' => 680, 'cosigner' => 'Yes'],
+                                    ['name' => 'Varun Pro', 'image' => 'varun2.png', 'price' => 430, 'cosigner' => 'No']
+                                ];
+                            @endphp
+
+                            @foreach($lenders as $index => $lender)
+                            <div class="card border-0 shadow-sm mb-4 wow fadeInUp" data-wow-duration="0.8s">
+                                <div class="card-body p-4">
+                                    <!-- Header Section -->
+                                    <div class="row align-items-center mb-3 pb-3 border-bottom">
+                                        <div class="col-md-8">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="lender-logo bg-light rounded p-2">
+                                                    <img src="assets/images/{{ $lender['image'] }}" alt="{{ $lender['name'] }}" style="height: 50px; object-fit: contain;">
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold">{{ $lender['name'] }}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                            <a href="{{ route('loan.details') }}" class="btn btn-primary px-4 py-2 mb-2 w-100 w-md-auto" style="background: #11274D; border: none;">
+                                                Visit Site <i class="bi bi-arrow-up-right ms-1"></i>
+                                            </a>
+                                            @if($index === 0)
+                                            <span class="badge bg-success d-block d-md-inline-block mt-2">Best Interest Rate</span>
+                                            @endif
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick Info Grid -->
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <div class="p-3 bg-light rounded">
+                                                <p class="text-muted small mb-1">Effective Interest</p>
+                                                <h6 class="fw-bold mb-0">9.70 - 39.90%</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="p-3 bg-light rounded">
+                                                <p class="text-muted small mb-1">Age Limit</p>
+                                                <h6 class="fw-bold mb-0">20 years</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="p-3 bg-light rounded">
+                                                <p class="text-muted small mb-1">Repayment Period</p>
+                                                <h6 class="fw-bold mb-0">1 - 09 years</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Expandable Details Button -->
+                                    <div class="text-center pt-2 border-top">
+                                        <button type="button" class="btn btn-link text-decoration-none fw-semibold" style="color: #11274D;" onclick="toggleLenderDetails(this, {{ $index }})">
+                                            View Detailed Information <i class="bi bi-chevron-down ms-1"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Expandable Content -->
+                                    <div class="view-content-wrap view-content-wrap-{{ $index }}" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out;">
+                                        <div class="pt-4 mt-3 border-top">
+                                            <h5 class="mb-3 fw-bold">About {{ $lender['name'] }}</h5>
+                                            <p class="text-muted mb-0">{{ $lender['name'] }} is one of the trusted partner lenders offering loan amounts up to $100,000, making it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, with flexible repayment terms up to 12 years for certain loan types.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                        
+                        <script>
+                            function toggleLenderDetails(button, index) {
+                                const card = button.closest('.card');
+                                const contentWrap = card.querySelector('.view-content-wrap-' + index);
+                                const icon = button.querySelector('i');
+                                
+                                if (contentWrap.style.maxHeight && contentWrap.style.maxHeight !== '0px') {
+                                    contentWrap.style.maxHeight = '0px';
+                                    icon.classList.remove('bi-chevron-up');
+                                    icon.classList.add('bi-chevron-down');
+                                    button.innerHTML = 'View Detailed Information <i class="bi bi-chevron-down ms-1"></i>';
+                                } else {
+                                    contentWrap.style.maxHeight = contentWrap.scrollHeight + 'px';
+                                    icon.classList.remove('bi-chevron-down');
+                                    icon.classList.add('bi-chevron-up');
+                                    button.innerHTML = 'Hide Detailed Information <i class="bi bi-chevron-up ms-1"></i>';
+                                }
+                            }
+                        </script>
+
+                        <style>
+                            .lender-logo {
+                                min-width: 80px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            
+                            .card {
+                                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                            }
+                            
+                            .card:hover {
+                                transform: translateY(-2px);
+                                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+                            }
+                        </style>
                     </div>
                 </div>
                 <div class="col-12 col-xl-4 btn_sticky">
                     <div class="d-inline-block d-xl-none mb-4">
-                        <button class="sidebar_btn"> <i class="bi bi-layout-text-sidebar"></i> <span>Loan Info</span></button>    
+                        <button class="sidebar_btn"> <i class="bi bi-layout-text-sidebar"></i> <span>Loan Info</span></button>
                     </div>
                     <div class="sidebar sidebar_fixed sidebar-xl-fixed cus_scrollbar">
                         <div class="sidebar__part">
-                            <h4 class="sidebar__part-title">Loan Applying Info</h4>
-                            <div class="minimum-loan mb-4">
-                                <p class="minimum-loan__title">Minimum Loan Start</p>
-                                <span class="fs-4">$199</span>
-                            </div>
-                            <ul>
-                                <li><i class="bi bi-check2-circle"></i>Determine Eligibility</li>
-                                <li><i class="bi bi-check2-circle"></i>Choose the Loan Type</li>
-                                <li><i class="bi bi-check2-circle"></i>Gather Required Documents</li>
-                                <li><i class="bi bi-check2-circle"></i>Fill Out the Application Form</li>
-                                <li><i class="bi bi-check2-circle"></i>Review and Submit</li>
-                            </ul>
-                            <div class="text-center mt_40">
-                                <a href="#" class="btn_theme btn_theme_active w-100">Visit Site <i class="bi bi-arrow-up-right"></i><span></span></a>
-                                <p class="d-flex align-items-center justify-content-center mt_12"> <i class="bi bi-dot"> </i>Terms & Conditions Apply</p>
-                                <div class="gap-3 mt-4 justify-content-center">
-                                    <a href="#" class="btn_theme social_box btn_bg_white"> <i class="bi bi-heart"></i> <span></span> </a>    
-                                    <a href="#" class="btn_theme social_box btn_bg_white"> <i class="bi bi-arrow-left-right"></i> <span></span> </a>    
+                            <h4 class="sidebar__part-title">Apply for a Loan</h4>
+
+                            <form wire:submit.prevent="submitEnquiry" class="loan-form">
+
+                                <!-- Name -->
+                                <div class="mb-3">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Enter your name"
+                                        wire:model.defer="name">
                                 </div>
-                            </div>
+
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email"
+                                        class="form-control"
+                                        placeholder="Enter your email"
+                                        wire:model.defer="email">
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="text"
+                                        class="form-control"
+                                        placeholder="Enter your phone"
+                                        wire:model.defer="phone">
+                                </div>
+
+                                <!-- Loan Category -->
+                                <div class="mb-3">
+                                    <label class="form-label">Loan Category</label>
+                                    <select class="form-select"
+                                        wire:model.defer="category">
+                                        <option value="">Select Loan Type</option>
+                                        <option value="personal">Personal Loan</option>
+                                        <option value="home">Home Loan</option>
+                                        <option value="car">Car Loan</option>
+                                        <option value="business">Business Loan</option>
+                                    </select>
+                                </div>
+                                <style>
+                                    .loan-form .form-control,
+                                    .loan-form .form-select {
+                                        border-radius: 8px;
+                                        padding: 10px 12px;
+                                        font-size: 14px;
+                                    }
+
+                                    .loan-form label {
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                    }
+
+                                    .loan-form textarea {
+                                        resize: none;
+                                    }
+                                </style>
+
+                                <!-- Message -->
+                                <div class="mb-4">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control"
+                                        rows="3"
+                                        placeholder="Your requirement"
+                                        wire:model.defer="message"></textarea>
+                                </div>
+
+                                <!-- Button -->
+                                <button type="submit"
+                                    class="btn_theme btn_theme_active w-100">
+                                    Submit Enquiry
+                                    <span></span>
+                                </button>
+
+                                <p class="d-flex align-items-center justify-content-center mt_12">
+                                    <i class="bi bi-dot"></i>We will contact you within 24 hours
+                                </p>
+
+                            </form>
                         </div>
+
                         <div class="sidebar__part">
                             <h4 class="sidebar__part-title">Share with</h4>
                             <div class="social mt_32">
@@ -161,4 +351,4 @@
             </div>
         </div>
     </section>
-    </div>
+</div>

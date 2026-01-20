@@ -81,617 +81,55 @@
     </section>
     <!--Hero Section End -->
 
-    <!-- Ammout Comaprison start -->
-     <section class="ammount-comparison style2">
+        <!-- Bank Partners Start -->
+    <section class="section bank-partners-section" style="background: #f5f5f5;">
         <div class="container">
-            <div class="ammount-comparison4-head">
-                <div class="amount-item-form">
-                    <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Loan amount</span>
-                    <input type="text" placeholder="₹500,000">
+            <div class="section__header text-center m-auto mb-xxl-5 mb-5">
+                <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="color: #6A7283;">
+                    <img src="assets/images/section-arrow-right.png" alt="vector">Our Working Partners
+                </span>
+                <h2 class="section__header-title mb-3 wow fadeInUp" data-wow-duration="0.8s" style="color: #404A60;">
+                    Trusted Banking Partners
+                </h2>
+                <p style="color: #6A7283;">
+                    We collaborate with leading banks and financial institutions to bring you the best loan options and competitive rates.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.1s">
+                    <div class="bank-partner-card">
+                        <div class="bank-logo-wrapper">
+                            <img src="{{ asset('bank/HDFCBank.webp') }}" alt="HDFC Bank" class="bank-logo">
+                        </div>
+                    </div>
                 </div>
-                <div class="amount-item-form">
-                    <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Minimum deposit</span>
-                    <select name="deposit">
-                        <option value="1">5%</option>
-                        <option value="1">50%</option>
-                        <option value="1">40%</option>
-                        <option value="1">80%</option>
-                        <option value="1">30%</option>
-                    </select>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.2s">
+                    <div class="bank-partner-card">
+                        <div class="bank-logo-wrapper">
+                            <img src="{{ asset('bank/download.png') }}" alt="Partner Bank" class="bank-logo">
+                        </div>
+                    </div>
                 </div>
-                <div class="amount-item-form">
-                    <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Loan type & Term</span>
-                    <select name="deposit">
-                        <option value="1">25 years, Variable</option>
-                        <option value="1">5 years</option>
-                        <option value="1">9 years</option>
-                        <option value="1">2 years</option>
-                        <option value="1">6 years</option>
-                    </select>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s">
+                    <div class="bank-partner-card">
+                        <div class="bank-logo-wrapper">
+                            <img src="{{ asset('bank/download (1).png') }}" alt="Partner Bank" class="bank-logo">
+                        </div>
+                    </div>
                 </div>
-                <div class="amount-item-form">
-                    <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">Sort by</span>
-                    <select name="deposit">
-                        <option value="1">Interest Rate - Low to High</option>
-                        <option value="1">₹258</option>
-                        <option value="1">₹3558</option>
-                        <option value="1">₹840</option>
-                        <option value="1">₹9584</option>
-                    </select>
-                </div>
-                <div class="amount-item-filter">
-                    <span class="amount-title d-block fw-semibold mb-xxl-3 mb-2">More Filter</span>
-                    <button type="button" class="funnel"><i class="bi bi-funnel"></i> Filter</button>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.4s">
+                    <div class="bank-partner-card">
+                        <div class="bank-logo-wrapper">
+                            <img src="{{ asset('bank/images.jpg') }}" alt="Partner Bank" class="bank-logo">
+                        </div>
+                    </div>
                 </div>
             </div>
+           
         </div>
-         <div class="loan-reviews">
-             <div class="container">
-                 <div class="row justify-content-center">
-                     <div class="col-lg-12">
-                         <div class="d-flex flex-column gap-4">
-                            <div class="loan-reviews_card loan-reviews_card4 position-relative overflow-hidde card wow fadeInUp" data-wow-duration="0.8s">
-                                <div class="loan-reviews__part-one">
-                                    <div class="reviews__thumb">
-                                         <img src="assets/images/sarah.png" alt="image">
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div class="star_review">
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-half star-active"></i>
-                                        </div>
-                                        <p class="k-review">25K+ Reviews</p>
-                                    </div>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="price-content">
-                                    <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>₹745</h3> <span>/ month</span>
-                                    </div>
-                                    <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Effective Interest</span>
-                                    <h5>9.70 - 39.90 %</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Age limit</span>
-                                    <h5>20 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Repayment period</span>
-                                    <h5>1 - 09 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="loan-reviews__part-three">
-                                    <div class="btn-group position-initial">
-                                        <div class="apply-text d-flex align-items-center gap-2">
-                                            · Terms & Conditions Apply
-                                        </div>
-                                        <div class="text-center mb-2">
-                                            <a href="loan-reviews-details.html" class="btn_theme d-flex btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                        </div>
-                                        <div class="sdfdsf">
-                                            <button type="button" class="d-flex view-btn bg-transparent fw-semibold gap-2 align-items-center justify-content-center">
-                                                View Details <i class="bi bi-chevron-down"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="view-content-wrap text-start">
-                                    <div class="box">
-                                        <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
-                                        </p>
-                                        <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
-                                        <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Prepayment penalty</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Origination Fee</span>
-                                                    <span class="pay-name fw-500">0% to 12%</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">₹15</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Check processing fee</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Time to fund </span>
-                                                    <span class="pay-name fw-500">As soon as 1 - 3 business days</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Minimum Credit Score</span>
-                                                    <span class="pay-name fw-500">700</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Do they allow a cosigner</span>
-                                                    <span class="pay-name fw-500">No</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Best for </span>
-                                                    <span class="pay-name fw-500">Best home improvement loans</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="interest-badge text-uppercase">
-                                    The Best Interest
-                                </span>
-                            </div>
-                            <div class="loan-reviews_card loan-reviews_card4 position-relative overflow-hidde card wow fadeInUp" data-wow-duration="0.8s">
-                                <div class="loan-reviews__part-one">
-                                    <div class="reviews__thumb">
-                                         <img src="assets/images/varun.png" alt="image">
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div class="star_review">
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-half star-active"></i>
-                                        </div>
-                                        <p class="k-review">25K+ Reviews</p>
-                                    </div>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="price-content">
-                                    <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
-                                    </div>
-                                    <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Effective Interest</span>
-                                    <h5>9.70 - 39.90 %</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Age limit</span>
-                                    <h5>20 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Repayment period</span>
-                                    <h5>1 - 09 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="loan-reviews__part-three">
-                                    <div class="btn-group position-initial">
-                                        <div class="apply-text d-flex align-items-center gap-2">
-                                            · Terms & Conditions Apply
-                                        </div>
-                                        <div class="text-center mb-2">
-                                            <a href="loan-reviews-details.html" class="btn_theme d-flex btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                        </div>
-                                        <div class="sdfdsf">
-                                            <button type="button" class="d-flex view-btn bg-transparent fw-semibold gap-2 align-items-center justify-content-center">
-                                                View Details <i class="bi bi-chevron-down"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="view-content-wrap text-start">
-                                    <div class="box">
-                                        <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
-                                        </p>
-                                        <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
-                                        <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Prepayment penalty</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Origination Fee</span>
-                                                    <span class="pay-name fw-500">0% to 12%</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">₹15</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Check processing fee</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Time to fund </span>
-                                                    <span class="pay-name fw-500">As soon as 1 - 3 business days</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Minimum Credit Score</span>
-                                                    <span class="pay-name fw-500">700</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Do they allow a cosigner</span>
-                                                    <span class="pay-name fw-500">No</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Best for </span>
-                                                    <span class="pay-name fw-500">Best home improvement loans</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="interest-badge text-uppercase">
-                                    The Best Interest
-                                </span>
-                            </div>
-                            <div class="loan-reviews_card loan-reviews_card4 position-relative overflow-hidde card wow fadeInUp" data-wow-duration="0.8s">
-                                <div class="loan-reviews__part-one">
-                                    <div class="reviews__thumb">
-                                         <img src="assets/images/joseph.png" alt="image">
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div class="star_review">
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-half star-active"></i>
-                                        </div>
-                                        <p class="k-review">25K+ Reviews</p>
-                                    </div>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="price-content">
-                                    <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
-                                    </div>
-                                    <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Effective Interest</span>
-                                    <h5>9.70 - 39.90 %</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Age limit</span>
-                                    <h5>20 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Repayment period</span>
-                                    <h5>1 - 09 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="loan-reviews__part-three">
-                                    <div class="btn-group position-initial">
-                                        <div class="apply-text d-flex align-items-center gap-2">
-                                            · Terms & Conditions Apply
-                                        </div>
-                                        <div class="text-center mb-2">
-                                            <a href="loan-reviews-details.html" class="btn_theme d-flex btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                        </div>
-                                        <div class="sdfdsf">
-                                            <button type="button" class="d-flex view-btn bg-transparent fw-semibold gap-2 align-items-center justify-content-center">
-                                                View Details <i class="bi bi-chevron-down"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="view-content-wrap text-start">
-                                    <div class="box">
-                                        <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
-                                        </p>
-                                        <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
-                                        <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Prepayment penalty</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Origination Fee</span>
-                                                    <span class="pay-name fw-500">0% to 12%</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">₹15</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Check processing fee</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Time to fund </span>
-                                                    <span class="pay-name fw-500">As soon as 1 - 3 business days</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Minimum Credit Score</span>
-                                                    <span class="pay-name fw-500">700</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Do they allow a cosigner</span>
-                                                    <span class="pay-name fw-500">No</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Best for </span>
-                                                    <span class="pay-name fw-500">Best home improvement loans</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="interest-badge text-uppercase">
-                                    The Best Interest
-                                </span>
-                            </div>
-                            <div class="loan-reviews_card loan-reviews_card4 position-relative overflow-hidde card wow fadeInUp" data-wow-duration="0.8s">
-                                <div class="loan-reviews__part-one">
-                                    <div class="reviews__thumb">
-                                         <img src="assets/images/power.png" alt="image">
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div class="star_review">
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-half star-active"></i>
-                                        </div>
-                                        <p class="k-review">25K+ Reviews</p>
-                                    </div>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="price-content">
-                                    <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
-                                    </div>
-                                    <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Effective Interest</span>
-                                    <h5>9.70 - 39.90 %</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Age limit</span>
-                                    <h5>20 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Repayment period</span>
-                                    <h5>1 - 09 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="loan-reviews__part-three">
-                                    <div class="btn-group position-initial">
-                                        <div class="apply-text d-flex align-items-center gap-2">
-                                            · Terms & Conditions Apply
-                                        </div>
-                                        <div class="text-center mb-2">
-                                            <a href="loan-reviews-details.html" class="btn_theme d-flex btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                        </div>
-                                        <div class="sdfdsf">
-                                            <button type="button" class="d-flex view-btn bg-transparent fw-semibold gap-2 align-items-center justify-content-center">
-                                                View Details <i class="bi bi-chevron-down"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="view-content-wrap text-start">
-                                    <div class="box">
-                                        <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
-                                        </p>
-                                        <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
-                                        <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Prepayment penalty</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Origination Fee</span>
-                                                    <span class="pay-name fw-500">0% to 12%</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">₹15</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Check processing fee</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Time to fund </span>
-                                                    <span class="pay-name fw-500">As soon as 1 - 3 business days</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Minimum Credit Score</span>
-                                                    <span class="pay-name fw-500">700</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Do they allow a cosigner</span>
-                                                    <span class="pay-name fw-500">No</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Best for </span>
-                                                    <span class="pay-name fw-500">Best home improvement loans</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="interest-badge text-uppercase">
-                                    The Best Interest
-                                </span>
-                            </div>
-                            <div class="loan-reviews_card loan-reviews_card4 position-relative overflow-hidde card wow fadeInUp" data-wow-duration="0.8s">
-                                <div class="loan-reviews__part-one">
-                                    <div class="reviews__thumb">
-                                         <img src="assets/images/varun2.png" alt="image">
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div class="star_review">
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-fill star-active"></i>
-                                            <i class="bi bi-star-half star-active"></i>
-                                        </div>
-                                        <p class="k-review">25K+ Reviews</p>
-                                    </div>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="price-content">
-                                    <div class="form-price d-flex align-items-end">
-                                        <span>From</span> <h3>₹314</h3> <span>/ month</span>
-                                    </div>
-                                    <p>Representative example: effective interest 28.79%, NOK 40,000, up to 5 years, cost NOK 31,208.</p>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Effective Interest</span>
-                                    <h5>9.70 - 39.90 %</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Age limit</span>
-                                    <h5>20 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="load-price-box border-0 bg-transparent px-0">
-                                    <span class="effect">Repayment period</span>
-                                    <h5>1 - 09 years</h5>
-                                </div>
-                                <img src="assets/images/review-line.png" alt="elemet" class="review-line">
-                                <div class="loan-reviews__part-three">
-                                    <div class="btn-group position-initial">
-                                        <div class="apply-text d-flex align-items-center gap-2">
-                                            · Terms & Conditions Apply
-                                        </div>
-                                        <div class="text-center mb-2">
-                                            <a href="loan-reviews-details.html" class="btn_theme d-flex btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                        </div>
-                                        <div class="sdfdsf">
-                                            <button type="button" class="d-flex view-btn bg-transparent fw-semibold gap-2 align-items-center justify-content-center">
-                                                View Details <i class="bi bi-chevron-down"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="view-content-wrap text-start">
-                                    <div class="box">
-                                        <h5 class="mb-3">Varun Personal Loans</h5>
-                                        <p class="mb-md-3 mb-2">Varun is one of three Credible partner lenders to offer loan amounts up to ₹100,000, which makes it ideal for financing large expenses like home improvements or weddings. Funds are available as soon as the same day you apply, and you'll have up to 12 years to repay certain types of loans, including home improvement loans, RV loans, and boat loans. There are no origination fees, and rates are low — as of this writing, Varun's lowest APR beats SoFi's advertised lowest APR by 1 percentage point. But you'll need good credit to qualify.
-                                        </p>
-                                        <p class="mb-3">Note that unlike most lenders, Varun does not let you prequalify. Nor does it provide a contact phone number next to its customer service hours on its website.</p>
-                                        <div class="personal-loan-inner d-flex justify-content-between flex-wrap gap-2">
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Prepayment penalty</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Origination Fee</span>
-                                                    <span class="pay-name fw-500">0% to 12%</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Late fee</span>
-                                                    <span class="pay-name fw-500">5% of late payment or ₹15</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Unsuccessful payment fee</span>
-                                                    <span class="pay-name fw-500">₹15</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Check processing fee</span>
-                                                    <span class="pay-name fw-500">None</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Time to fund </span>
-                                                    <span class="pay-name fw-500">As soon as 1 - 3 business days</span>
-                                                </div>
-                                            </div>
-                                            <div class="personal-loan-box">
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Minimum Credit Score</span>
-                                                    <span class="pay-name fw-500">700</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3 mb-1">
-                                                    <span class="position-relative pay-in">Do they allow a cosigner</span>
-                                                    <span class="pay-name fw-500">No</span>
-                                                </div>
-                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-sm-3">
-                                                    <span class="position-relative pay-in">Best for </span>
-                                                    <span class="pay-name fw-500">Best home improvement loans</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="interest-badge text-uppercase">
-                                    The Best Interest
-                                </span>
-                            </div>
-                         </div>
-                     </div>
-                     <div class="col-12">
-                         <div class="section__cta">
-                             <a href="loan-reviews.html" class="btn_theme see_all wow fadeInDown" data-wow-duration="0.8s">See All Review Loan<i class="bi bi-arrow-up-right"></i><span></span></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-    <!-- Ammout Comaprison End -->
+    </section>
+    <!-- Bank Partners End -->
+
 
     <!-- About Us start -->
     <section class="about-sectionv4 position-relative section">
@@ -895,6 +333,11 @@
          <img src="assets/images/about4-shape.png" alt="img" class="about4-shape d-xxl-block d-none">
     </section>
     <!-- About Us end -->
+
+
+    
+
+
 
     <!-- Working Process Start -->
     <section class="working-section4">

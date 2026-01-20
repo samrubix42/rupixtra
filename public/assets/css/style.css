@@ -8447,6 +8447,83 @@ label.error {
     padding: 14px;
   }
 }
+
+/* ==== 
+ --------- Bank Partners Section Styles ---------
+ ==== */
+.bank-partners-section {
+  padding: 80px 0;
+}
+
+.bank-partner-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  transition: all 0.35s ease-in-out;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.bank-partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: rgba(17, 39, 77, 0.1);
+}
+
+.bank-logo-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bank-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: all 0.35s ease-in-out;
+}
+
+.bank-partner-card:hover .bank-logo {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+  .bank-partners-section {
+    padding: 60px 0;
+  }
+  
+  .bank-partner-card {
+    padding: 25px 15px;
+  }
+  
+  .bank-logo {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .bank-partners-section {
+    padding: 50px 0;
+  }
+  
+  .bank-partner-card {
+    padding: 20px 10px;
+  }
+  
+  .bank-logo {
+    max-height: 50px;
+  }
+}
+
 /* ==== 
   --------- (6.0) responsive styles end ---------
   ==== *//*# sourceMappingURL=style.css.map */

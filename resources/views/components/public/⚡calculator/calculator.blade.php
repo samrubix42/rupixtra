@@ -25,211 +25,283 @@
     </section>
     <!-- Banner End -->
 
-<div class="emi-wrapper">
-    <div class="container py-5">
+<section class="emi-wrapper py-5">
+    <div class="container">
 
         <!-- TABS -->
-        <div class="d-flex justify-content-center gap-3 mb-5">
+        <div class="emi-tabs mb-5">
             <button class="emi-tab {{ $type=='personal' ? 'active' : '' }}"
                 wire:click="setType('personal')">
-                PERSONAL LOAN EMI CALCULATOR
+                Personal Loan
             </button>
-
             <button class="emi-tab {{ $type=='home' ? 'active' : '' }}"
                 wire:click="setType('home')">
-                HOME LOAN EMI CALCULATOR
+                Home Loan
             </button>
-
             <button class="emi-tab {{ $type=='car' ? 'active' : '' }}"
                 wire:click="setType('car')">
-                CAR LOAN EMI CALCULATOR
+                Car Loan
             </button>
         </div>
 
-        <div class="row g-4 align-items-center">
+        <div class="row g-4 align-items-stretch">
 
             <!-- LEFT -->
             <div class="col-lg-7">
-                <div class="emi-card">
+                <div class="emi-card h-100">
 
-                    <!-- Amount -->
-                    <div class="mb-4">
-                        <label>Loan Amount</label>
-                        <div class="input-box">
-                            ₹ <input type="number" wire:model.live="amount">
+                    <!-- Loan Amount -->
+                    <div class="emi-field">
+                        <div class="field-head">
+                            <label>Loan Amount</label>
+                            <span class="value">₹ {{ number_format($amount) }}</span>
                         </div>
-                        <input type="range" class="form-range"
-                            min="50000" max="50000000"
-                            wire:model.live="amount">
+                        <input type="range"
+                            min="50000"
+                            max="50000000"
+                            step="1000"
+                            wire:model.live="amount"
+                            class="emi-range">
                     </div>
 
                     <!-- Interest -->
-                    <div class="mb-4">
-                        <label>Interest Rate (p.a)</label>
-                        <div class="input-box">
-                            <input type="number" step="0.01" wire:model.live="interest"> %
+                    <div class="emi-field">
+                        <div class="field-head">
+                            <label>Interest Rate</label>
+                            <span class="value">{{ $interest }}%</span>
                         </div>
-                        <input type="range" class="form-range"
-                            min="5" max="22" step="0.01"
-                            wire:model.live="interest">
+                        <input type="range"
+                            min="5"
+                            max="22"
+                            step="0.01"
+                            wire:model.live="interest"
+                            class="emi-range">
                     </div>
 
                     <!-- Tenure -->
-                    <div class="mb-4">
-                        <label>Tenure ({{ $type === 'personal' ? 'Months' : 'Years' }})</label>
-                        <div class="input-box">
-                            <input type="number" wire:model.live="tenure">
-                            {{ $type === 'personal' ? 'M' : 'Y' }}
+                    <div class="emi-field">
+                        <div class="field-head">
+                            <label>
+                                Tenure ({{ $type === 'personal' ? 'Months' : 'Years' }})
+                            </label>
+                            <span class="value">
+                                {{ $tenure }} {{ $type === 'personal' ? 'M' : 'Y' }}
+                            </span>
                         </div>
-                        <input type="range" class="form-range"
-                            min="1" max="{{ $type==='personal' ? 84 : 30 }}"
-                            wire:model.live="tenure">
+                        <input type="range"
+                            min="1"
+                            max="{{ $type === 'personal' ? 84 : 30 }}"
+                            wire:model.live="tenure"
+                            class="emi-range">
                     </div>
 
-                    <!-- EMI -->
-                    <div class="emi-footer">
-                        <h5>Your EMI* <span>₹ {{ number_format($this->emi) }}</span></h5>
-                        <button>Apply Now</button>
-                    </div>
-
-                    <small>*Equated Monthly Installment</small>
                 </div>
             </div>
 
             <!-- RIGHT -->
             <div class="col-lg-5">
-                <div class="emi-result">
-                    <div class="circle">
+                <div class="emi-result-card h-100">
+
+                    <small class="text-muted">Your Monthly EMI</small>
+                    <h1 class="emi-main">
+                        ₹ {{ number_format($this->emi) }}
+                    </h1>
+
+                    <div class="result-grid">
                         <div>
-                            <small>Total Amount Payable</small>
-                            <h4>₹ {{ number_format($this->totalPayable) }}</h4>
+                            <small>Total Payable</small>
+                            <strong>₹ {{ number_format($this->totalPayable) }}</strong>
+                        </div>
+                        <div>
+                            <small>Tenure</small>
+                            <strong>{{ $this->months }} Months</strong>
                         </div>
                     </div>
 
-                    <div class="legend">
+                    <hr>
+
+                    <div class="breakdown">
                         <div>
                             <span class="dot principal"></span>
-                            Principal <br>
+                            Principal
                             <strong>₹ {{ number_format($amount) }}</strong>
                         </div>
                         <div>
                             <span class="dot interest"></span>
-                            Interest <br>
+                            Interest
                             <strong>₹ {{ number_format($this->interestAmount) }}</strong>
                         </div>
                     </div>
+
+                    <button class="apply-btn w-100 mt-4">
+                        Apply for Loan
+                    </button>
+
                 </div>
             </div>
 
         </div>
     </div>
-</div>
-<style>
-    .emi-wrapper {
-    background: #f3f6f9;
-}
+</section>
 
-.emi-tab {
-    border: 1px solid #ddd;
-    padding: 10px 18px;
-    font-size: 12px;
-    background: #fff;
-    color: #11274E;
-    border-radius: 6px;
-    cursor: pointer;
-}
 
-.emi-tab.active {
-    background: #11274E;
-    color: #fff;
-}
 
-.emi-card {
-    background: #f8fafc;
-    padding: 30px;
-    border-radius: 16px;
-}
 
-.emi-card label {
-    font-weight: 600;
-    color: #11274E;
-}
+    <style>
+        /* ===== EMI BASE ===== */
+        .emi-wrapper {
+            background: #f4f7fb;
+        }
 
-.input-box {
-    background: #fff;
-    padding: 8px 12px;
-    border-radius: 8px;
-    width: 180px;
-    margin: 10px 0;
-}
+        .text-primary {
+            color: #11274E !important;
+        }
 
-.input-box input {
-    border: none;
-    width: 90px;
-    outline: none;
-}
+        /* ===== TABS ===== */
+        .emi-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
 
-.form-range::-webkit-slider-thumb {
-    background: #11274E;
-}
+        .emi-tab {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px 18px;
+            font-size: 13px;
+            border-radius: 6px;
+            color: #11274E;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-.emi-footer {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .emi-tab.active,
+        .emi-tab:hover {
+            background: #11274E;
+            color: #fff;
+        }
 
-.emi-footer span {
-    color: #11274E;
-    font-weight: 700;
-}
+        /* ===== CARD ===== */
+        .emi-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
 
-.emi-footer button {
-    background: #11274E;
-    color: #fff;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 8px;
-}
+        .emi-field {
+            margin-bottom: 25px;
+        }
 
-.emi-result {
-    background: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-}
+        .emi-field label {
+            font-weight: 600;
+            color: #11274E;
+        }
 
-.circle {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    border: 14px solid #d85bd8;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        /* ===== VALUE BOX ===== */
+        .value-box {
+            background: #f1f4f8;
+            padding: 6px 10px;
+            border-radius: 6px;
+        }
 
-.legend {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
+        .value-box input {
+            width: 90px;
+            border: none;
+            background: transparent;
+            outline: none;
+            font-weight: 600;
+        }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-    border-radius: 50%;
-}
+        /* ===== RANGE ===== */
+        .emi-range {
+            width: 100%;
+            height: 6px;
+            border-radius: 10px;
+            background: #dbe2ea;
+            outline: none;
+            appearance: none;
+        }
 
-.principal { background: #d85bd8; }
-.interest { background: #00d2b5; }
+        .emi-range::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #11274E;
+            border-radius: 50%;
+            cursor: pointer;
+        }
 
-</style>
+        /* ===== EMI FOOTER ===== */
+        .emi-footer {
+            margin-top: 30px;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .apply-btn {
+            background: #11274E;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        /* ===== RESULT CARD ===== */
+        .emi-result-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 20px;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* ===== BREAKDOWN ===== */
+        .breakdown {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .break-card {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        /* ===== DOTS ===== */
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        .principal {
+            background: #d85bd8;
+        }
+
+        .interest {
+            background: #00c9a7;
+        }
+
+        /* ===== SUMMARY ===== */
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+    </style>
+
 
 
 </div>
