@@ -53,27 +53,21 @@ new class extends Component
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="{{ route('loan.reviews') }}" data-bs-toggle="dropdown" aria-expanded="false">Loans</a>
+                                        <a class="nav-link dropdown-toggle" href="{{ route('loan.reviews') }}" data-bs-toggle="dropdown" aria-expanded="false">Our Offering</a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="{{ route('loan.details') }}">Personal loan</a></li>
                                             <li><a class="dropdown-item" href="{{ route('loan.details') }}">Home Loan</a></li>
                                             <li><a class="dropdown-item" href="{{ route('loan.details') }}">Bussiness Loan</a></li>
                                             <li><a class="dropdown-item" href="{{ route('loan.details') }}">Lap</a></li>
                                             <li><a class="dropdown-item" href="{{ route('loan.details') }}">Self-Employed Pro Loan</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('credit.cards') }}">Credit Cards</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('calculator') }}">Calulator</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Offerings </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="{{ route('credit.cards') }}">Credit Cards</a></li>
-                                            <li><a class="dropdown-item" href="{{ route('mutual.funds') }}">Mutual Funds</a></li>
-                                            <li><a class="dropdown-item" href="{{ route('life.insurance') }}">Life Insurance</a></li>
 
-                                        </ul>
-                                    </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                                     </li>
@@ -101,32 +95,27 @@ new class extends Component
                     <div class="custom-nevbar__left">
                         <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
                         <ul class="custom-nevbar__nav mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('about') }}"> Our story </a>
-                            </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="{{ route('home') }}">Home</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('about') }}"> Our story </a>
+                            </li>
+
                             <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="{{ route('loan.reviews') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loans </a>
+                                <a class="menu_link dropdown-toggle" href="{{ route('loan.reviews') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our offerings</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="{{ route('loan.details') }}">Personal Loan</a></li>
                                     <li><a class="dropdown-item" href="{{ route('loan.details') }}">Home Loan</a></li>
                                     <li><a class="dropdown-item" href="{{ route('loan.details') }}">Business Loan</a></li>
                                     <li><a class="dropdown-item" href="{{ route('loan.details') }}">LAP</a></li>
                                     <li><a class="dropdown-item" href="{{ route('loan.details') }}">Self-Employed Pro Loan</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('credit.cards') }}">Credit Cards</a></li>
+
                                 </ul>
                             </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="{{ route('calculator') }}">calculator</a>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Offerings </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('credit.cards') }}">Credit Cards</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('mutual.funds') }}">Mutual Funds</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('life.insurance') }}">Life Insurance</a></li>
-                                </ul>
                             </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="{{ route('blog') }}">Blog</a>
@@ -134,7 +123,7 @@ new class extends Component
                             <li class="menu_item">
                                 <a class="menu_link" href="{{ route('contact') }}">Reach Us</a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
